@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Document</title>
+  <style>
+ body{
+	text-align:center;
+ }
+ #output{
+     color:green;
+	 }		   
+  </style>
+ </head>
+<body>
+     
+     <span id="output"></span>
+	 
+<script>
+   let output = document.getElementById("output");
+   let incr=0;
+		 function add() {
+		 let val=document.createElement("p");
+		 output.appendChild(val);
+		 val.innerHTML="Welcome"
+		 }
+	
+	let stop=setInterval(()=>{
+	  if(incr===5){
+	     clearInterval(stop);
+	  }
+	  else{
+	     add()
+	  }
+   },3000)
+   </script>
+</body>
+</html>
+			 
